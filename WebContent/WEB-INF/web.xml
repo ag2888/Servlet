@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ServletProject</display-name>
+  <welcome-file-list>
+    <welcome-file>DataEntry.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>MultipleValueFieldHandlerServlet</servlet-name>
+    <servlet-class>com.kaizen.MultipleValueFieldHandlerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MultipleValueFieldHandlerServlet</servlet-name>
+    <url-pattern>/multiplevaluefieldhandlerservlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ConfirmationServlet</display-name>
+    <servlet-name>ConfirmationServlet</servlet-name>
+    <servlet-class>com.kaizen.ConfirmationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfirmationServlet</servlet-name>
+    <url-pattern>/confirmationservlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResponseRedirectionServlet</display-name>
+    <servlet-name>ResponseRedirectionServlet</servlet-name>
+    <servlet-class>com.kaizen.ResponseRedirectionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseRedirectionServlet</servlet-name>
+    <url-pattern>/responseredirectionservlet</url-pattern>
+  </servlet-mapping>
+</web-app>
